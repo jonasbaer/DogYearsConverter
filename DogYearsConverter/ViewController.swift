@@ -23,9 +23,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func convertButtonPressed(sender: UIButton) {
-        
+        // convert input number into int
+        //let inputHumanYears = insertHumanYearsTextField.text.toInt()!
+        let inputHumanYears = Double((insertHumanYearsTextField.text as NSString).doubleValue)
 
+        // create constant
+        let conversionFactorDogToMen = 7.5
 
+        showCatYearsLabel.hidden = false
+        showCatYearsLabel.text = "This equals to \(inputHumanYears / conversionFactorDogToMen) years for dogs :)"
+        insertHumanYearsTextField.resignFirstResponder()
 
     }
 
