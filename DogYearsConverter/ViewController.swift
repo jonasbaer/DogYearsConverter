@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var insertHumanYearsTextField: UITextField!
+    @IBOutlet weak var showCatYearsLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func convertButtonPressed(sender: UIButton) {
+        
+
+
+
+    }
 
 }
 
